@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
 import * as worldMapData from './worldMap.json';
+import { MapsModule, MapsTooltipService } from '@syncfusion/ej2-angular-maps';
+
 @Component({
   selector: 'app-root',
+  imports: [MapsModule],
+  providers: [MapsTooltipService],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
